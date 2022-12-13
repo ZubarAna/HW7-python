@@ -1,6 +1,6 @@
-def import_data(data, sep=';'):
+def import_data(data, sep=''):
     with open('phone_book.csv', 'a+') as file:
-        if sep == ' ':
+        if sep == '':
             for i in data:
                 file.write(f'{i}')
             file.write(f'{i}')
