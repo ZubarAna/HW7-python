@@ -25,4 +25,12 @@ def to_do():
          data = export_data()
          print_data(data)
     else:
-        # вызываем функцию поиска
+        word = input('Кого ищем?\n')
+        data = export_data()
+        item = search_data(word, data)
+        if item != None:
+            print('|', 'Фамилия'.center(10), '|', 'Имя'.center(10), '|', 'Телефон'.center(12), '|', 'Примечание'.center(10), '|')
+            print("-" * 42)
+            print('|', item[0].center(10), '|', item[1].center(10), '|', item[2].center(12), '|', item[3].center(10), '|')
+        else:
+            print('Нет такого контакта')

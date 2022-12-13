@@ -1,8 +1,8 @@
 def print_data(data):
     if len(data) > 0:
-        print('|', 'Фамилия'.center(20), '|', 'Имя'.center(20), '|', 'Телефон'.center(15), '|', 'Примечание'.center(30), '|')
-        print("-" * 85)
+        print('|', 'Фамилия'.center(10), '|', 'Имя'.center(10), '|', 'Телефон'.center(12), '|', 'Примечание'.center(10), '|')
+        print("-" * 42)
         for item in data:
-            print('|', item[0].center(20), '|', item[1].center(20), '|', item[2].center(15), '|', item[3].center(30), '|')
+            print('|', item[0].center(10), '|', item[1].center(10), '|', item[2].center(12), '|', item[3].center(10), '|')
     else:
         print("Справочник пуст!")
